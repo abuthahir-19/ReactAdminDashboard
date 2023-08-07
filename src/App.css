@@ -1,4 +1,4 @@
 .sidebar {
     z-index: 1000;
-    transition: width 500ms;
+    transition: width 200ms;
 }
