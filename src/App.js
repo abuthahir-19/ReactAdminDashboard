@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import { useStateContext } from "./context/ContextProvider";
+import { Navbar, Sidebar } from './components';
+import { BrowserRouter } from "react-router-dom";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    const { activeMenu } = useStateContext();
+    return (
+        <div className=" overflow-hidden">
+            <BrowserRouter>
+                {activeMenu ? (
+                    <div className="w-72 fixed sidebar">
+                        <Sidebar />
+                    </div>
+                ) : (
+                    <div className="w-0 fixed sidebar">
+                        <Sidebar />
+                    </div>
+                )}
+
+                <div className={
+                    `transition-all ${activeMenu ? 'ml-72 w-auto': 'w-[90%] mx-auto'}`
+                }>
+                    <div className="">
+                        <Navbar />
+                    </div>
+                </div>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;
