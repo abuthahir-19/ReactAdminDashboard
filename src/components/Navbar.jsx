@@ -4,8 +4,6 @@ import { AiOutlineMenu } from 'react-icons/ai';
 import { IoMdNotificationsOutline } from 'react-icons/io';
 import { useStateContext } from "../context/ContextProvider";
 import { BiChevronDown } from "react-icons/bi";
-import Notification from "./Notification";
-import UserProfile from "./UserProfile";
 import Avatar from '../data/avatar.jpg';
 
 const NavButton = ({ title, customFunc, icon, color, dotColor }) => {
@@ -30,7 +28,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => {
 
 
 const Navbar = () => {
-    const { setActiveMenu, handleClick, isClicked } = useStateContext();
+    const { setActiveMenu, handleClick } = useStateContext();
     return (
         <div className="flex items-center justify-between relative">
             <div className="flex justify-between p-2 items-center w-3/5">
@@ -49,14 +47,14 @@ const Navbar = () => {
                     customFunc={() => handleClick('notification')}
                     icon={<IoMdNotificationsOutline />}
                 />
-                <div className="p-2 flex items-center justify-between gap-2 shadow-inner cursor-pointer" onClick={() => handleClick('userProfile')}>
-                    <img src={Avatar} alt="UserProfile" className="h-8 w-8 rounded-full " />
-                    <p>Hi, Micheal</p>
-                    <BiChevronDown className="text-2xl" />
-                </div>
+                <TooltipComponent content="Profile" position="BottomCenter">
+                    <div className="p-2 flex items-center justify-between gap-2 shadow-inner cursor-pointer" onClick={() => handleClick('userProfile')}>
+                        <img src={Avatar} alt="UserProfile" className="h-8 w-8 rounded-full " />
+                        <p className=" font-medium text-slate-500">Hi, Micheal</p>
+                        <BiChevronDown className="text-2xl" />
+                    </div>
+                </TooltipComponent>
             </div>
-            { isClicked.notification && <Notification />}
-            { isClicked.userProfile && <UserProfile />}
         </div>
     );
 }
