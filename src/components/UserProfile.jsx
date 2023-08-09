@@ -4,10 +4,13 @@ import { AiOutlineMessage } from 'react-icons/ai';
 import Avatar from '../data/avatar.jpg';
 import { Login } from '../pages/index';
 import { Route } from 'react-router-dom';
+import { useStateContext } from '../context/ContextProvider';
 
 const UserProfile = () => {
+    const { isClicked } = useStateContext();
+
     return (
-        <div className='flex fixed justify-center items-center flex-col p-4 w-1/5 shadow-2xl rounded-md right-5 top-14 userprofile'>
+        <div className={`flex fixed justify-center items-center flex-col p-4 ${ isClicked ? 'w-1/5' : 'w-0'} rounded-md right-5 top-24 userprofile shadow-effect`}>
             <p className='text-sm text-slate-400 font-medium p-2'>SIT19CS150</p>
             <img 
                 src={Avatar} 

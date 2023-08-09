@@ -48,11 +48,11 @@ const Navbar = () => {
                     icon={<IoMdNotificationsOutline />}
                 />
                 <TooltipComponent content="Profile" position="BottomCenter">
-                    <div className="p-2 flex items-center justify-between gap-2 shadow-inner cursor-pointer" onClick={() => handleClick('userProfile')}>
+                    <button type="button" className="p-2 flex items-center justify-between gap-2 shadow-inner cursor-pointer" onClick={() => handleClick('userProfile')}>
                         <img src={Avatar} alt="UserProfile" className="h-8 w-8 rounded-full " />
                         <p className=" font-medium text-slate-500">Hi, Micheal</p>
                         <BiChevronDown className="text-2xl" />
-                    </div>
+                    </button>
                 </TooltipComponent>
             </div>
         </div>
