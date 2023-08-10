@@ -1,6 +1,6 @@
 const Database = () => {
     return (
-        <div>
+        <div className="">
 
         </div>
     );
