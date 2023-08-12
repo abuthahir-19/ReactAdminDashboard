@@ -5,7 +5,7 @@ import { HiOutlineNewspaper } from 'react-icons/hi';
 import { Link } from "react-router-dom";
 const Notification = () => {
     return (
-        <div className="fixed right-[130px] w-[23%] flex flex-col justify-center rounded-md shadow-effect">
+        <div className="fixed top-20 right-[130px] w-[23%] flex flex-col justify-center rounded-md shadow-effect">
             <NotItem icon={<BsCalendar2Event />} content="Calendar-Remainder for Review Annual Report" mins="30 minutes" />
             <NotItem icon={<AiOutlineMessage />} content="Messenger-Kathyrm Murphy sent you a file" mins="2 days" />
             <NotItem icon={<HiOutlineNewspaper />} content="News-Robert Fox won first place in OSN" mins="3 days" />

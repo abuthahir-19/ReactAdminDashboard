@@ -31,3 +31,18 @@ export const links = [
         icon : <IoSettingsOutline />
     }
 ];
+
+export const settingsLink = [
+    {
+        linkName: 'Profile',
+        clicked : true,
+    },
+    {
+        linkName: 'Change Password',
+        clicked: false,
+    },
+    {
+        linkName: 'Notification',
+        clicked: false,
+    }
+];
