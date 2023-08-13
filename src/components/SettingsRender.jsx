@@ -1,5 +1,6 @@
 import ChangePassword from "./ChangePassword";
 import Profile from "./Profile";
+import Notification from "./Notification";
 
 const SettingsRender = ({ status }) => {
     if (status === 'Profile') {
@@ -10,6 +11,10 @@ const SettingsRender = ({ status }) => {
         return (
             <ChangePassword />
         );
+    } else if ( status === 'Notification') {
+        return (
+            <Notification />
+        )
     }
 }
 

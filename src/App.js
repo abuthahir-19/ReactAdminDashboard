@@ -1,7 +1,7 @@
 import { useStateContext } from "./context/ContextProvider";
 import { Navbar, Sidebar } from './components';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Notification, UserProfile } from "./components";
+import { NotificationDialog, UserProfile } from "./components";
 import { Settings } from "./pages";
 import './App.css';
 
@@ -32,7 +32,7 @@ const App = () => {
                             <Route path="/Settings" element={<Settings />} />
                         </Routes>
                     </div>
-                    { isClicked.notification && <Notification /> }
+                    { isClicked.notification && <NotificationDialog /> }
                     { isClicked.userProfile && <UserProfile /> }
                 </div>
             </BrowserRouter>

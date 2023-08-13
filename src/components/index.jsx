@@ -1,5 +1,5 @@
 export { default as Navbar } from './Navbar';
-export { default as Notification } from './Notification';
+export { default as NotificationDialog } from './NotificationDialog';
 export { default as Searchbar } from './Searchbar';
 export { default as Sidebar } from './Sidebar';
 export { default as UserProfile } from './UserProfile';
@@ -7,3 +7,4 @@ export { default as NotItem } from './NotItem';
 export { default as Profile } from './Profile';
 export { default as ChangePassword } from './ChangePassword';
 export { default as SettingsRender } from './SettingsRender';
+export { default as Notification } from './Notification';
