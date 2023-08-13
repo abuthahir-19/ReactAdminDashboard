@@ -8,3 +8,5 @@ export { default as Profile } from './Profile';
 export { default as ChangePassword } from './ChangePassword';
 export { default as SettingsRender } from './SettingsRender';
 export { default as Notification } from './Notification';
+export { default as ProfileDetails } from './ProfileDetails';
+export { default as ProfileUpdate } from './ProfileUpdate';
