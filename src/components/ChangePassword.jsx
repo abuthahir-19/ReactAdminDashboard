@@ -4,13 +4,14 @@ const ChangePassword = () => {
     const [password, setPassword] = useState ('');
     const [confirm, setConfirm] = useState ('');
 
-    const handleChangePassword = () => {
-        console.log ('form submitted');
+    const handlePasswordChange = (e) => {
+        e.preventDefault()
+        console.log (password === confirm);
     }
 
     return (
         <div>
-            <form className="w-3/4 p-2">
+            <form className="w-3/4 p-2" onSubmit={e => handlePasswordChange(e)}>
                 <div className="flex justify-evenly items-center my-4">
                     <label htmlFor="Password" className="font-normal text-lg text-slate-800 flex justify-end w-1/5">New Password : </label>
                     <input 
@@ -34,10 +35,8 @@ const ChangePassword = () => {
                     />
                 </div>
                 <div className="mt-8 flex items-center justify-center">
-                    <button 
-                        type="button" 
+                    <button
                         className="w-1/4 px-5 py-2 border-2 border-green-400 bg-green-400 rounded-md font-medium text-white hover:bg-green-500 transition"
-                        onClick={handleChangePassword}
                     >Change</button>
                 </div>
             </form>

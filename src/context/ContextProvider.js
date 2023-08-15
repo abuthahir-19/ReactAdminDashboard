@@ -18,6 +18,7 @@ export const ContextProvider = ({ children }) => {
         setEditMode (true);
     };
 
+
     const handleClick = (clicked) => {
         setIsClicked ({ ...initialState, [clicked]: !isClicked[clicked] });
     }
