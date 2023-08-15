@@ -77,7 +77,7 @@ const ProfileUpdate = () => {
                 </div>
                 <div className='flex justify-between items-center m-3'>
                     <label htmlFor='About' className='font-normal text-lg text-slate-800 flex justify-end w-1/5'>About : </label>
-                    <textarea placeholder='Write something about you' className='resize-none w-3/4 p-2 border-2 border-gray-500 rounded-md' onChange={e => handleChange (e, 'About')} />
+                    <textarea rows="4" placeholder='Write something about you' className='resize-none w-3/4 p-2 border-2 border-gray-500 rounded-md' onChange={e => handleChange (e, 'About')} />
                 </div>
 
                 <div className='flex justify-between items-center w-1/2 mx-auto mt-8 font-medium'>
