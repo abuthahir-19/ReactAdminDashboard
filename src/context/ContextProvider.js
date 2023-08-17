@@ -13,6 +13,7 @@ export const ContextProvider = ({ children }) => {
     const [isClicked, setIsClicked] = useState (initialState);
     const [EditMode, setEditMode] = useState (false);
     const [user, setUser] = useState (userDetails);
+    const [rowClicked, setRowClicked] = useState (false);
 
     const handleEditClick = () => {
         setEditMode (true);
@@ -24,7 +25,7 @@ export const ContextProvider = ({ children }) => {
     }
 
     return (
-        <StateContext.Provider value={{ activeMenu, setActiveMenu, handleClick, isClicked, setIsClicked, EditMode, handleEditClick, setEditMode, user, setUser }}>
+        <StateContext.Provider value={{ activeMenu, setActiveMenu, handleClick, isClicked, setIsClicked, EditMode, handleEditClick, setEditMode, user, setUser, rowClicked, setRowClicked }}>
             { children }
         </StateContext.Provider>
     )

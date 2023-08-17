@@ -31,7 +31,7 @@ const Settings = () => {
                         className={`${link.clicked ? ' border-b-2 border-green-400' : 'border-white' } mx-10 px-4 pb-4 text-slate-400 text-lg font-medium`}
                         onClick={() => handleClick (link.linkName)}
                     >
-                        <p>{link.linkName}</p>
+                        <p className={`${link.clicked ? 'text-green-400': 'text-slate-400'}`}>{link.linkName}</p>
                     </NavLink>
                 ))}
             </div>
