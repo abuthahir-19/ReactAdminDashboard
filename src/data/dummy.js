@@ -98,3 +98,12 @@ export const teacherDatabase = [
     { profile: './avatar.jpg', name : "Jerome Belf", ID: 'SC100100', Class: 'Science 4', Age: 17, Gender: 'Male', Email: 'KKahi@gmail.com', clicked: false},
     { profile: './avatar.jpg', name : "Jenny Wilson", ID: 'SC300041', Class: 'Social 3', Age: 18, Gender: 'Female', Email: 'Jenny@gmail.com', clicked: false},
 ];
+
+export const studentAttendanceData = [
+    { month : 'Jan', att: 35}, { month: 'Feb', att: 28 },
+    { month : 'Mar', att: 34}, { month: 'Apr', att: 32 },
+    { month : 'May', att: 48}, { month: 'Jun', att: 32 },
+    { month : 'Jul', att: 35}, { month: 'Aug', att: 55 },
+    { month : 'Sep', att: 38}, { month: 'Oct', att: 38 },
+    { month : 'Nov', att: 25}, { month: 'Dec', att: 32 },
+];

@@ -2,7 +2,7 @@ import { useStateContext } from "./context/ContextProvider";
 import { Navbar, Sidebar } from './components';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { NotificationDialog, UserProfile } from "./components";
-import { Settings, Database } from "./pages";
+import { Settings, Database, Attendance } from "./pages";
 import './App.css';
 
 const App = () => {
@@ -29,8 +29,9 @@ const App = () => {
 
                     <div className="w-full">
                         <Routes>
-                            <Route path="/Settings" element={<Settings />} />
                             <Route path="/Database" element={<Database />} />
+                            <Route path="/Attendance" element={<Attendance />} />
+                            <Route path="/Settings" element={<Settings />} />
                         </Routes>
                     </div>
                     { isClicked.notification && <NotificationDialog /> }

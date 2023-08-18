@@ -8,6 +8,7 @@ import { FiCamera } from 'react-icons/fi';
 import AvatarImg from '../data/avatar.jpg';
 import { userDetails } from "../data/dummy";
 import PeopleGroup from "../components/PeopleGroup";
+import { AiOutlinePlus } from 'react-icons/ai';
 
 const Database = () => {
     const { rowClicked, setRowClicked, activeMenu } = useStateContext();
@@ -33,8 +34,13 @@ const Database = () => {
     return (
         <div className="flex flex-row">
             <div className={`${rowClicked ? activeMenu ? 'w-[70%]' : 'w-[75%]' : 'w-full'} database-table`}>
-                <div className="flex justify-start items-center p-3">
+                <div className="flex justify-between items-center p-3">
                     <h2 className="font-medium text-2xl text-slate-800">Database</h2>
+                    <div>
+                        <button className="flex justify-between items-center text-white bg-green-400 px-5 py-1 rounded-lg font-medium">
+                            <span className="mr-2">{ <AiOutlinePlus /> }</span>Add
+                        </button>
+                    </div>
                 </div>
 
                 <div className="p-2 mt-3 flex justify-start overflow-x-scroll w-full lg:overflow-hidden md:overflow-hidden xl:overflow-hidden 2xl:overflow-hidden">
