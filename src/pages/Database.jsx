@@ -5,7 +5,7 @@ import DatabaseRender from "../components/DatabaseRender";
 import { useStateContext } from "../context/ContextProvider";
 import { RxCross1 } from 'react-icons/rx';
 import { FiCamera } from 'react-icons/fi';
-import AvatarImg from '../data/avatar.jpg';
+import AvatarImg from '../images/pict-11.jpeg';
 import { userDetails } from "../data/dummy";
 import PeopleGroup from "../components/PeopleGroup";
 import { AiOutlinePlus } from 'react-icons/ai';

@@ -1,5 +1,4 @@
 import { RxDashboard } from 'react-icons/rx';
-import { PiMessengerLogoBold } from 'react-icons/pi';
 import { SlCalender } from 'react-icons/sl';
 import { BsDatabase } from 'react-icons/bs';
 import { TbBrandGoogleAnalytics } from 'react-icons/tb';
@@ -9,10 +8,6 @@ export const links = [
     {
         title : 'Dashboard',
         icon : <RxDashboard /> 
-    },
-    {
-        title : 'Messenger',
-        icon : <PiMessengerLogoBold />
     },
     {
         title : 'Calendar',
@@ -74,7 +69,7 @@ export const databaseLink = [
 ];
 
 export const studentDatabase = [
-    { profile: './avatar.jpg', name : "Ken Khai", ID: 'SC400122', Class: 'Science 4', Age: 17, Gender: 'Male', Email: 'KKahi@gmail.com', clicked: false},
+    { profile: '../images/pict-11.jpeg', name : "Ken Khai", ID: 'SC400122', Class: 'Science 4', Age: 17, Gender: 'Male', Email: 'KKahi@gmail.com', clicked: false},
     { profile: './avatar.jpg', name : "Zach Sweger", ID: 'SC400123', Class: 'Science 4', Age: 18, Gender: 'Male', Email: 'ZachSweger@gmail.com', clicked: false},
     { profile: './avatar.jpg', name : "Brooklyn Simmans", ID: 'SC400124', Class: 'Science 4', Age: 18, Gender: 'Female', Email: 'Brooklyn@gmail.com', clicked: false},
     { profile: './avatar.jpg', name : "Savannah Nguyen", ID: 'SC400125', Class: 'Science 4', Age: 19, Gender: 'Female', Email: 'Savannah@gmail.com', clicked: false},
@@ -106,4 +101,22 @@ export const studentAttendanceData = [
     { month : 'Jul', att: 35}, { month: 'Aug', att: 55 },
     { month : 'Sep', att: 38}, { month: 'Oct', att: 38 },
     { month : 'Nov', att: 25}, { month: 'Dec', att: 32 },
+];
+
+export const teacherAttendanceData = [
+    { month : 'Jan', att: 24}, { month: 'Feb', att: 52 },
+    { month : 'Mar', att: 31}, { month: 'Apr', att: 47 },
+    { month : 'May', att: 13}, { month: 'Jun', att: 58 },
+    { month : 'Jul', att: 23}, { month: 'Aug', att: 28 },
+    { month : 'Sep', att: 55}, { month: 'Oct', att: 37 },
+    { month : 'Nov', att: 10}, { month: 'Dec', att: 35 },
+];
+
+export const staffAttendanceData = [
+    { month : 'Jan', att: 24}, { month: 'Feb', att: 52 },
+    { month : 'Mar', att: 31}, { month: 'Apr', att: 47 },
+    { month : 'May', att: 13}, { month: 'Jun', att: 58 },
+    { month : 'Jul', att: 23}, { month: 'Aug', att: 28 },
+    { month : 'Sep', att: 55}, { month: 'Oct', att: 37 },
+    { month : 'Nov', att: 10}, { month: 'Dec', att: 35 },
 ];

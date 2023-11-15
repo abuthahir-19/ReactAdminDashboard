@@ -1,5 +1,5 @@
 import { Avatar } from '@mui/material';
-import AvatarImg from '../data/avatar.jpg';
+import AvatarImg from '../images/pict-11.jpeg';
 
 const PeopleGroup = () => {
     return (

@@ -1,7 +1,6 @@
 import { ChartComponent, Inject, DataLabel, SeriesCollectionDirective, SeriesDirective, Category, Tooltip, SplineAreaSeries } from '@syncfusion/ej2-react-charts';
-import { studentAttendanceData } from '../../data/dummy';
 
-const SplineChart = ({ fillColor, borderColor, toolTipColor}) => {
+const SplineChart = ({ dataSource, fillColor, borderColor, toolTipColor}) => {
     return (
         <ChartComponent
             style={{ height: '300px', width: '100%' }}
@@ -11,7 +10,7 @@ const SplineChart = ({ fillColor, borderColor, toolTipColor}) => {
             }} tooltip={{ enable: true, shared: true, enableMarker: false, fill: `${toolTipColor}` }} chartArea={{ border: { width: 0 } }}>
             <Inject services={[SplineAreaSeries, Category, Tooltip, DataLabel]} />
             <SeriesCollectionDirective>
-                <SeriesDirective type="SplineArea" dataSource={studentAttendanceData} xName="month" yName="att" name="Attended" width={2.5} marker={{ visible: false }} fill={fillColor} opacity={0.3} border={{ width: 2.75, color: `${borderColor}` }}></SeriesDirective>
+                <SeriesDirective type="SplineArea" dataSource={dataSource} xName="month" yName="att" name="Attended" width={2.5} marker={{ visible: false }} fill={fillColor} opacity={0.3} border={{ width: 2.75, color: `${borderColor}` }}></SeriesDirective>
             </SeriesCollectionDirective>
         </ChartComponent>
     );

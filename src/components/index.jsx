@@ -11,3 +11,5 @@ export { default as Notification } from './Notification';
 export { default as ProfileDetails } from './ProfileDetails';
 export { default as ProfileUpdate } from './ProfileUpdate';
 export { default as SplineChart } from './Charts/SplineChart';
+export { default as Progress } from './Progress';
+export { default as RecentProfile } from './RecentProfile';

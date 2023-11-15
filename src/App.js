@@ -23,7 +23,7 @@ const App = () => {
                 <div className={
                     `transition-all relative ${activeMenu ? 'ml-72 w-auto': 'mx-auto'} md:w-full md:ml-0 sm:w-full sm:ml-0 xs:w-full xs:ml-0`
                 }>
-                    <div className={`${activeMenu ? 'w-auto' : 'w-[90%] mx-auto'}`}>
+                    <div className={`${activeMenu ? 'w-auto' : 'w-full'}`}>
                         <Navbar />
                     </div>
 

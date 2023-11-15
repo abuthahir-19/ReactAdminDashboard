@@ -1,4 +1,4 @@
-import Avatar from '../data/avatar.jpg';
+import Avatar from '../images/pict-11.jpeg';
 import { FiCamera } from 'react-icons/fi';
 import { useState } from 'react';
 import { FiEdit } from 'react-icons/fi';

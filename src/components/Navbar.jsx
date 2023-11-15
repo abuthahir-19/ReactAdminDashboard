@@ -4,7 +4,7 @@ import { AiOutlineMenu } from 'react-icons/ai';
 import { IoMdNotificationsOutline } from 'react-icons/io';
 import { useStateContext } from "../context/ContextProvider";
 import { BiChevronDown } from "react-icons/bi";
-import Avatar from '../data/avatar.jpg';
+import Avatar from '../images/pict-11.jpeg';
 
 const NavButton = ({ title, customFunc, icon, color, dotColor }) => {
     return (

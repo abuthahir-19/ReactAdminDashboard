@@ -1,7 +1,7 @@
 import { BsTelephone } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
 import { AiOutlineMessage } from 'react-icons/ai';
-import Avatar from '../data/avatar.jpg';
+import Avatar from '../images/pict-11.jpeg';
 import { Login } from '../pages/index';
 import { Route } from 'react-router-dom';
 import { useStateContext } from '../context/ContextProvider';

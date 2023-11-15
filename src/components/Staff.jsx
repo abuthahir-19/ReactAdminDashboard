@@ -1,4 +1,4 @@
-import Avatar from '../data/avatar.jpg';
+import Avatar from '../images/pict-11.jpeg';
 import { Table, TableBody, TableHead, TableContainer, TableRow, TableCell, Paper } from "@mui/material";
 import { studentDatabase } from '../data/dummy';
 import { useState } from 'react';
